@@ -1,0 +1,24 @@
+
+{
+    "name": "your-name/my-shortlink-plugin",
+    "type": "wordpress-plugin",
+    "description": "A plugin to manage short links.",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Denis Bogdanov",
+            "email": "denis.bogdanov95@icloud.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyShortlinkPlugin\\includes\\": "includes/",
+            "MyShortlinkPlugin\\Admin\\": "admin/", 
+            "MyShortlinkPlugin\\": "src/"
+
+        }
+    }
+}
